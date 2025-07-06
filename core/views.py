@@ -151,8 +151,6 @@ class OrderViewSet(viewsets.ModelViewSet):
         print(order.items)
         order.save()
 
-        # Clear the cart
-        # cart.items.all().delete()
 
         # Return response with serialized data
         serializer = OrderSerializer(order)
